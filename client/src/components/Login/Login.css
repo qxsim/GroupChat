@@ -1,0 +1,80 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #root {
+    height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .loginOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+  }
+  
+  .loginInnerContainer {
+    width: 30%;
+  }
+  
+  .loginInput {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 15px 20px;
+    width: 75%;
+    box-shadow: 0px 14px 9px -15px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-in;
+    border: none;
+  }
+  
+  .heading {
+    color: black;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+  }
+
+  .title {
+    color: black;
+    font-size: 3em;
+    padding-bottom: 10px;
+  }
+
+  .button {
+      color: white !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 14px 9px -15px rgba(0, 0, 0, 0.25);
+      padding: 20px;
+      border-radius: 8px;
+      display: inline-block;
+      border: none;
+      width: 75%;
+      transition: all 0.2s ease-in;
+  }
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .loginOuterContainer {
+      height: 100%;
+    }
+  
+    .loginInnerContainer {
+      width: 90%;
+    }
+  }
+
+  .loginInput:hover, .button:hover {
+    transform: translateY(-3px);
+  }
+  
